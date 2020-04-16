@@ -1,6 +1,8 @@
 language: java
+before_install:
+- sudo yum install ant-junit
+- sudo apt-get install ant-optional
 script: ant main
-        ant UserMasterDAOTest
 script: ant UserMasterDAOTest
 jdk:
   - oraclejdk9
