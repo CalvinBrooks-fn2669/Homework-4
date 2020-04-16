@@ -1,4 +1,6 @@
 language: java
+services:
+- sqlite3
 before_install:
 - sudo apt-get install ant-optional
 #script: ant main
